@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: Raleway, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #1a1a1a;
+}
+
+header {
+  background-color: #42b883;
+  color: white;
+  font-weight: bold;
+  padding: 2rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+section.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2rem 5rem;
+  height: 80vh;
+}
+
+.wrapper-form,
+.wrapper-belum,
+.wrapper-sudah {
+  background-color: #242424;
+}
+
+.wrapper-form,
+.wrapper-belum,
+.wrapper-sudah {
+  padding: 1rem 2rem;
+}
+
+.wrapper-form h2,
+.wrapper-belum h2,
+.wrapper-sudah h2 {
+  color: #d9d9d9;
+  margin: 0 0 1rem 0;
+  text-align: center;
+}
+
+.wrapper-belum,
+.wrapper-sudah {
+  overflow: auto;
+  height: auto;
+  max-height: 24rem;
+}
+
+.wrapper-form .form__judul,
+.wrapper-form .form__penulis,
+.wrapper-form .form__tahun {
+  display: flex;
+  flex-direction: column;
+  color: #d9d9d9;
+  margin: 0 0 1rem 0;
+}
+
+.wrapper-form .form__judul label,
+.wrapper-form .form__penulis label,
+.wrapper-form .form__tahun label {
+  margin: 0 0 0.5rem 0;
+}
+
+.wrapper-form .form__judul input,
+.wrapper-form .form__penulis input,
+.wrapper-form .form__tahun input {
+  padding: 0.5rem 1rem;
+}
+
+.wrapper-form .form__button {
+  padding: 0.75rem;
+  border: 1px solid #42b883;
+  color: #42b883;
+  background-color: transparent;
+  margin: 2rem 0 0 0;
+}
+
+.wrapper-form .form__button:hover {
+  cursor: pointer;
+  color: white;
+  background-color: #42b883;
+}
+
+.belum,
+.sudah {
+  background-color: transparent;
+  border: 1px solid #42b883;
+  padding: 0.75rem 1rem;
+  color: #d9d9d9;
+  margin: 1rem 0 0 0;
+}
+
+.belum__button button:first-child {
+  background-color: transparent;
+  border: 1px solid #42b883;
+  padding: 0.75rem;
+  color: #42b883;
+}
+
+.belum__button button:last-child {
+  border: 1px solid red;
+  background-color: transparent;
+  padding: 0.75rem;
+  margin: 0 0 0 1rem;
+  color: red;
+}
+
+.belum__button button:first-child:hover {
+  cursor: pointer;
+  color: white;
+  background-color: #42b883;
+}
+
+.belum__button button:last-child:hover {
+  cursor: pointer;
+  color: white;
+  background-color: red;
+}
+
+/* width */
+.wrapper-belum::-webkit-scrollbar,
+.wrapper-sudah::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.wrapper-belum::-webkit-scrollbar-track,
+.wrapper-sudah::-webkit-scrollbar {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+/* Handle */
+.wrapper-belum::-webkit-scrollbar-thumb,
+.wrapper-sudah::-webkit-scrollbar {
+  background: #42b883;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.wrapper-belum::-webkit-scrollbar-thumb:hover,
+.wrapper-sudah::-webkit-scrollbar {
+  background: #555;
+}
